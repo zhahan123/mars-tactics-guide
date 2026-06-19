@@ -170,4 +170,82 @@ code,.mono,.card-tag,.hero-badge{font-family:var(--font-mono)}
 .footer-col a:hover{color:var(--accent)}
 .footer-bottom{max-width:1140px;margin:24px auto 0;padding-top:14px;border-top:1px solid var(--border);text-align:center;font-size:.72rem;color:var(--text3);font-family:var(--font-mono);letter-spacing:.5px}
 
+/* === HERO (Home Page) === */
+.hero{
+  text-align:center;padding:80px 20px 70px;
+  background:linear-gradient(180deg,var(--bg) 0%,#1a1510 50%,var(--bg) 100%);
+  position:relative;
+}
+.hero::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+}
+.hero-badge{
+  display:inline-block;background:rgba(255,107,53,.12);color:var(--accent);
+  padding:5px 14px;font-size:.78rem;margin-bottom:18px;
+  border:1px solid rgba(255,107,53,.3);font-family:var(--font-mono);
+  letter-spacing:1px;text-transform:uppercase;
+}
+.hero h1{font-size:3rem;color:#fff;margin-bottom:12px;line-height:1.15;font-weight:800}
+.hero h1 .hl{color:var(--accent);font-style:normal}
+.hero p{color:var(--text2);font-size:1.05rem;margin-bottom:32px;max-width:540px;margin-left:auto;margin-right:auto}
+.hero-stats{display:flex;gap:40px;justify-content:center;margin-bottom:32px;flex-wrap:wrap}
+.hero-stat{text-align:center}
+.hero-stat .num{font-size:2rem;font-weight:700;color:var(--accent);font-family:var(--font-mono)}
+.hero-stat .label{font-size:.78rem;color:var(--text3);text-transform:uppercase;letter-spacing:1px}
+
+/* === FEATURE CARDS (Home) === */
+.feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:700px){.feat-grid{grid-template-columns:1fr}}
+.feat{
+  background:var(--bg-card);border:1px solid var(--border);
+  padding:20px;transition:.2s;
+}
+.feat:hover{border-color:var(--accent)}
+.feat .icon{font-size:2rem;margin-bottom:8px}
+.feat h4{color:#fff;margin-bottom:6px;font-size:.95rem;font-weight:600}
+.feat p{color:var(--text2);font-size:.82rem;line-height:1.5}
+
+/* === STEP CARDS (Home Roadmap) === */
+.step-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}
+@media(max-width:700px){.step-row{grid-template-columns:1fr}}
+.step{
+  background:var(--bg-card);border:1px solid var(--border);
+  padding:24px;position:relative;overflow:hidden;
+}
+.step::before{
+  counter-increment:step;content:'0' counter(step);
+  font-family:var(--font-mono);font-size:3rem;font-weight:700;
+  color:rgba(255,107,53,.12);position:absolute;top:12px;right:16px;
+}
+.step h4{color:#fff;margin-bottom:8px;font-size:1rem;font-weight:600}
+.step p{color:var(--text2);font-size:.84rem;line-height:1.55}
+
+/* === FAQ (Home) === */
+.faq-item{border-bottom:1px solid var(--border);padding:18px 0}
+.faq-item h4{color:#fff;margin-bottom:4px;font-size:.95rem;font-weight:600}
+.faq-item p{color:var(--text2);font-size:.84rem;margin-top:4px}
+
+/* === CTA (Home) === */
+.cta{
+  text-align:center;padding:60px 20px;
+  background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.cta h2{font-size:1.6rem;color:#fff;margin-bottom:8px;font-weight:700}
+.cta p{color:var(--text2);margin-bottom:20px}
+
+/* === SECTION HEADER (Home sections) === */
+.sec-label{
+  font-family:var(--font-mono);font-size:.74rem;color:var(--accent);
+  text-transform:uppercase;letter-spacing:2px;margin-bottom:8px;
+}
+.sec-title{font-size:1.6rem;color:#fff;margin-bottom:10px;font-weight:700}
+.sec-desc{color:var(--text2);margin-bottom:32px;font-size:.92rem;max-width:600px}
+
+/* === AD PLACEHOLDER === */
+.ad-placeholder{
+  max-width:1200px;margin:0 auto;padding:0 24px 24px;text-align:center;
+  min-height:90px;display:flex;align-items:center;justify-content:center;
+}
+
 .hidden{display:none!important}
