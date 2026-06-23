@@ -1,49 +1,52 @@
 /* Mars Tactics Guide — Full Data & Logic */
 const guidesData = [
   {
-    id:'beginner-guide',title:'Mars Tactics Beginner Guide — Everything You Need to Know Before Playing',
+    id:'beginner-guide',title:'Mars Tactics Beginner Guide — Everything I Wish I Knew Before Starting',
     category:'beginner',tag:'Beginner',featured:true,author:'MarsGuide Team',date:'2026-05-30',views:0,likes:0,
-    excerpt:'New to Mars Tactics? Learn the core mechanics, choose your faction, master combat basics, and avoid rookie mistakes in this comprehensive starter guide.',
+    excerpt:'Honest advice from someone who has been tracking this game for over a year. Pick the right faction, avoid dumb early mistakes, and actually enjoy your first campaign.',
     content:`
-<h2>What is Mars Tactics?</h2>
-<p>Mars Tactics is a turn-based tactical strategy game set on a colonized Mars. Think <strong>XCOM meets grand strategy</strong> — you command squads in tactical battles while managing a planet-wide campaign of logistics, research, and territory control.</p>
-<div class="toc"><h3>Quick Navigation</h3><a href="#choose">1. Choosing Your Faction</a><a href="#combat">2. Combat Fundamentals</a><a href="#strategy">3. The Strategy Layer</a><a href="#tips">4. 10 Pro Tips</a></div>
+<h2>So What Even Is This Game?</h2>
+<p>Mars Tactics is what you get when XCOM and a grand strategy game have a baby. You're commanding squads in turn-based firefights <em>and</em> running a planet-wide war at the same time — supply lines, railways, prison camps, the works. It's from the publisher behind Manor Lords and Against the Storm, so yeah, the strategy layer actually matters.</p>
+<p>I've been following this game since the first trailer dropped, and honestly? The thing that sets it apart isn't the shooting — it's the <strong>everything else</strong>. You can win a battle and lose the war because your water supply dried up. More on that below.</p>
+<div class="toc"><h3>Quick Navigation</h3><a href="#choose">1. Which Faction to Pick (Real Talk)</a><a href="#combat">2. How Combat Actually Works</a><a href="#strategy">3. The Strategy Part Nobody Talks About</a><a href="#tips">4. 10 Things I'd Tell My Past Self</a></div>
 
-<h2 id="choose">1. Choosing Your Faction</h2>
-<p>You have two choices, and they play <strong>completely differently</strong>:</p>
+<h2 id="choose">1. Which Faction to Pick (Real Talk)</h2>
+<p>Two factions. Totally different campaigns. Here's the honest breakdown — not the marketing version:</p>
 <div class="table-wrap"><table>
 <tr><th></th><th>🔵 Capital</th><th>🔴 Labor</th></tr>
-<tr><td>Difficulty</td><td>Easier start</td><td>Harder start, snowballs later</td></tr>
-<tr><td>Resources</td><td>Abundant (from Earth)</td><td>Scarce (must scavenge)</td></tr>
-<tr><td>Units</td><td>Mechs, heavy weapons</td><td>Guerrilla fighters, improvised gear</td></tr>
-<tr><td>Playstyle</td><td>Defensive, entrenched</td><td>Aggressive, mobile</td></tr>
+<tr><td>Difficulty</td><td>Baby's first Mars colony</td><td>Dark Souls on Mars</td></tr>
+<tr><td>Vibe</td><td>Corporate enforcer with a blank check</td><td>Underground revolution with duct tape and hope</td></tr>
+<tr><td>Early Game</td><td>You have mechs. You have money. You're fine.</td><td>You have a wrench and a dream. Good luck.</td></tr>
+<tr><td>Late Game</td><td>Shareholders breathing down your neck</td><td>Entire Martian population behind you</td></tr>
+<tr><td>Fun Factor</td><td>Power fantasy. Stomp things with robots.</td><td>Underdog story. Every win feels earned.</td></tr>
 </table></div>
-<blockquote>🔰 <strong>Recommendation:</strong> Start with Capital to learn mechanics, then replay as Labor for the full challenge.</blockquote>
+<blockquote>🎯 <strong>My take:</strong> If this is your first time, play Capital. You'll actually learn the mechanics instead of fighting for survival. Then do a Labor run — it's the "real" campaign, and it's way more satisfying once you know what you're doing.</blockquote>
 
-<h2 id="combat">2. Combat Fundamentals</h2>
+<h2 id="combat">2. How Combat Actually Works</h2>
 <h3>The 360° Aim System</h3>
-<p>You can shoot at <strong>anything in line of sight</strong> — including ceilings, walls, and the floor. This enables:</p>
-<ul><li>Shooting through walls to hit enemies behind cover</li><li>Dropping ceilings on enemies below</li><li>Creating your own sightlines by destroying obstacles</li></ul>
-<h3>Suppression System</h3>
-<p>Even <strong>missed shots matter</strong>. Taking fire reduces enemy Action Points. Successful suppression <strong>steals AP</strong> for your squad — stack multiple units firing on one target to completely lock it down.</p>
-<h3>Throwable Sharing</h3>
-<p>You can <strong>toss unprimed grenades and spare magazines</strong> between squad members mid-battle. A pinned soldier can receive ammo from a teammate without either moving from cover.</p>
+<p>Forget everything XCOM taught you about cover. In Mars Tactics, <strong>walls are a suggestion</strong>. You can shoot through floors, drop ceilings on people, or blow a hole in the wall and shoot through it. Nothing is safe. Not you, not the enemy, not the building.</p>
+<p>The first time you realize you can collapse an entire floor and kill three enemies at once without firing a single bullet directly at them... that's when the game clicks.</p>
+<h3>Suppression Actually Matters</h3>
+<p>In XCOM, suppression is that thing you use when your sniper missed and you need to pretend you had a plan. In Mars Tactics, suppression <strong>steals enemy action points</strong>. Have three soldiers lay down fire on one target and that target doesn't get a turn. Zero AP. Frozen. This is not optional — this is how you win fights without taking damage.</p>
+<h3>Throw Stuff to Your Teammates</h3>
+<p>You can toss grenades, ammo, and medkits between squad members mid-fight. Sounds like a gimmick, but it's actually brilliant — your pinned sniper runs out of ammo? Have the guy in the next building chuck a magazine through the window. No mods, no special abilities, just physics.</p>
 
-<h2 id="strategy">3. The Strategy Layer</h2>
-<ul><li><strong>Base Building:</strong> Develop tech, train soldiers, invest in engineers and scientists</li><li><strong>Supply Lines:</strong> Build railways, guard convoys — poorly supplied troops suffer combat penalties</li><li><strong>Reinforcements:</strong> Adjacent squads join battles; artillery support from neighboring regions</li><li><strong>Prisoners:</strong> Capture enemies, interrogate for intel, ransom them, or rescue your own captured troops</li></ul>
+<h2 id="strategy">3. The Strategy Part Nobody Talks About</h2>
+<p>The tactical battles are the headline act, but the strategy layer is what actually decides who wins. Here's what actually matters:</p>
+<ul><li><strong>Railways > Everything:</strong> A base without a rail connection is an island. Your troops there are on their own. Build rails before you build anything else.</li><li><strong>Water is life:</strong> Ice mines produce water. No water = dead colony. The enemy knows this. Protect your ice mines like your campaign depends on it — because it does.</li><li><strong>Prisoners aren't just flavor:</strong> Interrogate them for intel and enemy positions show up on your map. Ransom them for resources. Rescue your own captured guys. This system has depth.</li><li><strong>Adjacent squads reinforce each other:</strong> If two of your squads are in neighboring regions when a battle starts, both show up. Position your forces accordingly.</li></ul>
 
-<h2 id="tips">4. 10 Pro Tips for Beginners</h2>
+<h2 id="tips">4. 10 Things I'd Tell My Past Self</h2>
 <ol>
-<li>Always keep your supply lines secure — a cut-off squad is a dead squad</li>
-<li>Use suppression fire liberally — stealing AP wins fights</li>
-<li>Destroy terrain to create new firing angles</li>
-<li>Don't hoard grenades — toss them to teammates who need them</li>
-<li>Capture prisoners early — intel reveals enemy positions on the map</li>
-<li>Invest in railways before expanding too far</li>
-<li>Labor: manufacture your own weapons instead of waiting for drops</li>
-<li>Capital: time your offensives with Earth supply shipments</li>
-<li>Veteran soldiers with cybernetic upgrades are worth more than fresh recruits</li>
-<li>Wrecking an enemy ice mine drives up water prices — use economic warfare</li>
+<li>Build a railway <strong>before</strong> you expand. I cannot stress this enough. Cut-off bases starve.</li>
+<li>Suppression fire is not optional. Three shooters on one target = that target skips its turn.</li>
+<li>Destroy everything. Walls, floors, ceilings. The environment is a weapon.</li>
+<li>Don't sit on grenades. Toss them to whoever has the best throw angle <em>right now</em>.</li>
+<li>Capture at least one enemy in your first 10 missions. The intel snowball is real.</li>
+<li>As Capital: time your pushes with supply drops. Don't fight hungry.</li>
+<li>As Labor: manufacture early, manufacture often. Your workshop is your lifeline.</li>
+<li>Wounded veterans are upgrade candidates, not casualties. Cybernetics turn them into monsters.</li>
+<li>Blow up the enemy's ice mine. Watch their economy collapse. Then attack.</li>
+<li>Don't restart when things go wrong. Mars Tactics is at its best when you're barely hanging on.</li>
 </ol>
     `
   },
